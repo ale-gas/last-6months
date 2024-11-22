@@ -62,9 +62,9 @@ function App() {
     const codeChallenge = base64encode(hashed);
 
     const clientId = 'eb56e27d81c745179f5aca5e4f43a0bb';
-    const redirectUri = process.env.NODE_ENV === 'production' 
-    ? 'https://ale-gas.github.io/last-6months/' 
-    : 'http://localhost:3000/';
+    const redirectUri = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000/' 
+    : 'https://ale-gas.github.io/last-6months/';
     const scope = 'user-library-read playlist-modify-private playlist-modify-public playlist-read-private';
     const authUrl = new URL("https://accounts.spotify.com/authorize");
 
@@ -96,9 +96,9 @@ function App() {
         client_id: 'eb56e27d81c745179f5aca5e4f43a0bb',
         grant_type: 'authorization_code',
         code,
-        redirect_uri: process.env.NODE_ENV === 'production' 
-        ? 'https://ale-gas.github.io/last-6months/' 
-        : 'http://localhost:3000/',
+        redirect_uri: window.location.hostname === 'localhost' 
+        ? 'http://localhost:3000/' 
+        : 'https://ale-gas.github.io/last-6months/',
         code_verifier: codeVerifier,
       }),
     };
