@@ -62,7 +62,9 @@ function App() {
     const codeChallenge = base64encode(hashed);
 
     const clientId = 'eb56e27d81c745179f5aca5e4f43a0bb';
-    const redirectUri = 'http://localhost:3000/';
+    const redirectUri = process.env.NODE_ENV === 'production' 
+    ? 'https://ale-gas.github.io/last-6months/' 
+    : 'http://localhost:3000/';
     const scope = 'user-library-read playlist-modify-private playlist-modify-public playlist-read-private';
     const authUrl = new URL("https://accounts.spotify.com/authorize");
 
