@@ -96,7 +96,9 @@ function App() {
         client_id: 'eb56e27d81c745179f5aca5e4f43a0bb',
         grant_type: 'authorization_code',
         code,
-        redirect_uri: 'http://localhost:3000/',
+        redirect_uri: process.env.NODE_ENV === 'production' 
+        ? 'https://ale-gas.github.io/last-6months/' 
+        : 'http://localhost:3000/',
         code_verifier: codeVerifier,
       }),
     };
