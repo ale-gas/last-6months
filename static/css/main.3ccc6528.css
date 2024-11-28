@@ -2,7 +2,7 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-f
 
 .App{padding:20px}
 
-.button-container{margin-bottom:20px}button{background-color:#ed6686;border:none;border-radius:5px;color:#fffbdb;font-weight:bold;cursor:pointer;font-size:16px;margin:0 10px;padding:10px 20px}button:hover{background-color:#ed7b96}
+.button-container{margin-bottom:20px}button{background-color:#ed6686;border:none;border-radius:5px;color:#fffbdb;font-weight:900;cursor:pointer;font-size:16px;margin:0 10px;padding:10px 20px}button:hover{background-color:#ed7b96}
 
 .loading-text{color:#271f30}
 
