@@ -1,0 +1,76 @@
+/* App.css */
+
+/* Apply background color and text alignment to the entire page */
+body {
+  background-color: #FFFBDB;
+  color: #ed6686; /* Set text color to white for better contrast */
+  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  padding: 20px;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ed6686; /* Button background for contrast */
+  color: #FFFBDB; /* Button text color matching the background */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+button:hover {
+  background-color: #ed7b96; /* Slight hover effect */
+}
+
+.loading-text {
+  color: #271f30; /* Default color, can be easily changed */
+}
+
+.congratulations-message {
+  color: #A39000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.song-list {
+  display: grid;
+  grid-template-columns: 1fr auto; /* First column fills available space, second column sizes to content */
+  gap: 20px; /* Space between columns */
+  max-width: 1000px; /* Optional: limit overall width */
+  margin: 0 auto; /* Center the list */
+  text-align: left; /* Ensure left alignment */
+  color: #271f30;
+}
+
+.song-name {
+  overflow: hidden; /* Handle long song names */
+  text-overflow: ellipsis; /* Add ... for very long names */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.song-date {
+  color: #463857; /* Slightly muted color for added date */
+  text-align: right;
+}
+
+.song-count-message {
+  color: #271F30; /* Muted  color */
+  margin-top: 10px;
+  margin-bottom: 20px; /* Adds space below the song count text */
+  font-style: italic;
+}
+
+.playlist-button-container {
+  margin-bottom: 20px; /* Adds space below the "Create Playlist" button */
+}
