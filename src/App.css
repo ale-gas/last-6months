@@ -26,10 +26,11 @@ button {
   color: #FFFBDB; /* Button text color matching the background */
   cursor: pointer;
   font-size: 16px;
+  font-weight:bold;
 }
 
 button:hover {
-  background-color: #fff8c2; /* Slight hover effect */
+  background-color: #ed7b96; /* Slight hover effect */
 }
 
 .loading-text {
