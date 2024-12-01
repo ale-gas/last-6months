@@ -2,6 +2,8 @@
 
 last-6months is a tool to automatically  generate a spotify playlist containing all songs a added to the 'Liked songs' playlist during the past 6 months. All you need to do is login with your spotify account and click the buttons.
 
+The tool is live at https://ale-gas.github.io/last-6months/
+
 
 ## Warnings
 
