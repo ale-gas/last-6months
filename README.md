@@ -7,4 +7,4 @@ The tool is live at https://ale-gas.github.io/last-6months/
 
 ## Warnings
 
-I have absolutely no idea how to code. This was made in an afternoon using AI and intended for personal use. Use at own risk. Tips on how to make this more efficient/safer/better are always welcome.
+This was made in an afternoon using AI and intended for personal use. Use at own risk. Tips on how to make this more efficient/safer/better are always welcome.
